@@ -16,7 +16,7 @@ const SingleProduct = () => {
     height: 600,
     zoomWidth: 600,
 
-    img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",
+    img: "https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg",
   };
 
   const [orderedProduct, setorderedProduct] = useState(true);
@@ -45,28 +45,28 @@ const SingleProduct = () => {
             <div className="other-product-images d-flex flex-wrap gap-15">
               <div>
                 <img
-                  src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                  src="https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg"
                   className="img-fluid"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                  src="https://img.freepik.com/free-photo/brown-eggs_2829-13455.jpg"
                   className="img-fluid"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                  src="https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg"
                   className="img-fluid"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                  src="https://img.freepik.com/free-photo/brown-eggs_2829-13455.jpg"
                   className="img-fluid"
                   alt=""
                 />
@@ -77,11 +77,11 @@ const SingleProduct = () => {
             <div className="main-product-details">
               <div className="border-bottom">
                 <h3 className="title">
-                  Kids Headphones Bulk 10 Pack Multi Colored For Students
+                 Brown Eggs
                 </h3>
               </div>
               <div className="border-bottom py-3">
-                <p className="price">$ 100</p>
+                <p className="price">Rs 100</p>
                 <div className="d-flex align-items-center gap-10">
                   <ReactStars
                     count={5}
@@ -99,27 +99,27 @@ const SingleProduct = () => {
               <div className=" py-3">
                 <div className="d-flex gap-10 align-items-center my-2">
                   <h3 className="product-heading">Type :</h3>
-                  <p className="product-data">Watch</p>
+                  <p className="product-data">Eggs</p>
                 </div>
                 <div className="d-flex gap-10 align-items-center my-2">
                   <h3 className="product-heading">Brand :</h3>
-                  <p className="product-data">Havells</p>
+                  <p className="product-data">Namdeo Eggs</p>
                 </div>
-                <div className="d-flex gap-10 align-items-center my-2">
+                {/* <div className="d-flex gap-10 align-items-center my-2">
                   <h3 className="product-heading">Category :</h3>
                   <p className="product-data">Watch</p>
-                </div>
+                </div> */}
                 <div className="d-flex gap-10 align-items-center my-2">
                   <h3 className="product-heading">Tags :</h3>
-                  <p className="product-data">Watch</p>
+                  <p className="product-data">Eggs</p>
                 </div>
                 <div className="d-flex gap-10 align-items-center my-2">
                   <h3 className="product-heading">Availablity :</h3>
                   <p className="product-data">In Stock</p>
                 </div>
-                <div className="d-flex gap-10 flex-column mt-2 mb-3">
-                  <h3 className="product-heading">Size :</h3>
-                  <div className="d-flex flex-wrap gap-15">
+                {/* <div className="d-flex gap-10 flex-column mt-2 mb-3">
+                  <h3 className="product-heading">Size :</h3> */}
+                  {/* <div className="d-flex flex-wrap gap-15">
                     <span className="badge border border-1 bg-white text-dark border-secondary">
                       S
                     </span>
@@ -133,11 +133,11 @@ const SingleProduct = () => {
                       XXL
                     </span>
                   </div>
-                </div>
-                <div className="d-flex gap-10 flex-column mt-2 mb-3">
+                </div> */}
+                {/* <div className="d-flex gap-10 flex-column mt-2 mb-3">
                   <h3 className="product-heading">Color :</h3>
                   <Color />
-                </div>
+                </div> */}
                 <div className="d-flex align-items-center gap-15 flex-row mt-2 mb-3">
                   <h3 className="product-heading">Quantity :</h3>
                   <div className="">
@@ -189,7 +189,7 @@ const SingleProduct = () => {
                     href="javascript:void(0);"
                     onClick={() => {
                       copyToClipboard(
-                        "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                        "https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg"
                       );
                     }}
                   >
@@ -273,7 +273,7 @@ const SingleProduct = () => {
               <div className="reviews mt-4">
                 <div className="review">
                   <div className="d-flex gap-10 align-items-center">
-                    <h6 className="mb-0">Navdeep</h6>
+                    <h6 className="mb-0">Rohit</h6>
                     <ReactStars
                       count={5}
                       size={24}
@@ -328,10 +328,10 @@ const SingleProduct = () => {
             <div className="modal-body py-0">
               <div className="d-flex align-items-center">
                 <div className="flex-grow-1 w-50">
-                  <img src={watch} className="img-fluid" alt="product imgae" />
+                  <img src="https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg" className="img-fluid" alt="product imgae" />
                 </div>
                 <div className="d-flex flex-column flex-grow-1 w-50">
-                  <h6 className="mb-3">Apple Watch</h6>
+                  <h6 className="mb-3">Brown Eggs</h6>
                   <p className="mb-1">Quantity: asgfd</p>
                   <p className="mb-1">Color: asgfd</p>
                   <p className="mb-1">Size: asgfd</p>

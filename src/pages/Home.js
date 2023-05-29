@@ -5,186 +5,84 @@ import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
 import SpecialProduct from "../components/SpecialProduct";
 import Container from "../components/Container";
-import { services } from "../utils/Data";
+import { Carousel } from 'react-bootstrap';
+// import { services } from "../utils/Data";
 
 const Home = () => {
   return (
     <>
-      <Container class1="home-wrapper-1 py-5">
-        <div className="row">
-          <div className="col-6">
-            <div className="main-banner position-relative ">
-              <img
-                src="images/main-banner-1.jpg"
-                className="img-fluid rounded-3"
-                alt="main banner"
-              />
-              <div className="main-banner-content position-absolute">
-                <h4>SUPERCHARGED FOR PROS.</h4>
-                <h5>iPad S13+ Pro.</h5>
-                <p>From $999.00 or $41.62/mo.</p>
-                <Link className="button">BUY NOW</Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-6">
-            <div className="d-flex flex-wrap gap-10 justify-content-between align-items-center">
-              <div className="small-banner position-relative">
+ <Container fluid className="home-wrapper-1 py-5">
+      <div className="row">
+        <div className="col-12">
+          <Carousel>
+            <Carousel.Item>
+              <div className="main-banner position-relative">
                 <img
-                  src="images/catbanner-01.jpg"
-                  className="img-fluid rounded-3"
+                  src="https://img.freepik.com/free-psd/most-delicious-eggs-city-banner-template_23-2148725533.jpg?w=1060&t=st=1685354343~exp=1685354943~hmac=1e9f24b3de7234d18726e7cc356da4db370bcc90ac45a2d3b607d982cfac6000"
+                  className="img-fluid rounded-3 w-100"
                   alt="main banner"
+                  style={{ maxHeight: '500px' }}
                 />
-                <div className="small-banner-content position-absolute">
-                  <h4>Best Sake</h4>
-                  <h5>iPad S13+ Pro.</h5>
-                  <p>
-                    From $999.00 <br /> or $41.62/mo.
-                  </p>
-                </div>
               </div>
-              <div className="small-banner position-relative">
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="main-banner position-relative">
                 <img
-                  src="images/catbanner-02.jpg"
-                  className="img-fluid rounded-3"
+                  src="https://img.freepik.com/free-vector/bio-healthy-food-banner-template_23-2148798818.jpg?w=996&t=st=1685354410~exp=1685355010~hmac=893b35e516685ddfbfd0436e208a85e9e16d70a7016f8b65313cafd921244b63"
+                  className="img-fluid rounded-3 w-100"
                   alt="main banner"
+                  style={{ maxHeight: '500px' }}
                 />
-                <div className="small-banner-content position-absolute">
-                  <h4>NEW ARRIVAL</h4>
-                  <h5>But IPad Air</h5>
-                  <p>
-                    From $999.00 <br /> or $41.62/mo.
-                  </p>
-                </div>
               </div>
-              <div className="small-banner position-relative ">
-                <img
-                  src="images/catbanner-03.jpg"
-                  className="img-fluid rounded-3"
-                  alt="main banner"
-                />
-                <div className="small-banner-content position-absolute">
-                  <h4>NEW ARRIVAL</h4>
-                  <h5>But IPad Air</h5>
-                  <p>
-                    From $999.00 <br /> or $41.62/mo.
-                  </p>
-                </div>
-              </div>
-              <div className="small-banner position-relative ">
-                <img
-                  src="images/catbanner-04.jpg"
-                  className="img-fluid rounded-3"
-                  alt="main banner"
-                />
-                <div className="small-banner-content position-absolute">
-                  <h4>NEW ARRIVAL</h4>
-                  <h5>But IPad Air</h5>
-                  <p>
-                    From $999.00 <br /> or $41.62/mo.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+            </Carousel.Item>
+          </Carousel>
         </div>
-      </Container>
-      <Container class1="home-wrapper-2 py-5">
-        <div className="row">
-          <div className="col-12">
-            <div className="servies d-flex align-items-center justify-content-between">
-              {services?.map((i, j) => {
-                return (
-                  <div className="d-flex align-items-center gap-15" key={j}>
-                    <img src={i.image} alt="services" />
-                    <div>
-                      <h6>{i.title}</h6>
-                      <p className="mb-0">{i.tagline}</p>
-                    </div>
-                  </div>
-                );
-              })}
+      </div>
+    </Container>
+
+    <Container className="home-wrapper-2 py-5">
+      <div className="row">
+        <div className="col-12">
+          <div className="categories d-flex justify-content-between flex-wrap align-items-center">
+            <div className="d-flex gap align-items-center">
+              <div>
+                <h5>One day Fresh</h5>
+                
+              </div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5r2Gtyl9pJ-q2yQ9-Iqus5_MTQdY3OnleSA&usqp=CAU" style={{height:"120px"}}/>
             </div>
-          </div>
-        </div>
-      </Container>
-      <Container class1="home-wrapper-2 py-5">
-        <div className="row">
-          <div className="col-12">
-            <div className="categories d-flex justify-content-between flex-wrap align-items-center">
-              <div className="d-flex gap align-items-center">
-                <div>
-                  <h6>Music & Gaming</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/camera.jpg" alt="camera" />
+            <div className="d-flex gap align-items-center">
+              <div>
+                <h5>Passes 11 Saftey checks </h5>
+                
               </div>
-              <div className="d-flex gap align-items-center">
-                <div>
-                  <h6>Cameras</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/camera.jpg" alt="camera" />
-              </div>
-              <div className="d-flex gap align-items-center">
-                <div>
-                  <h6>Smart Tv</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/tv.jpg" alt="camera" />
-              </div>
-              <div className="d-flex gap align-items-center">
-                <div>
-                  <h6>Smart Watches</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/headphone.jpg" alt="camera" />
-              </div>
-              <div className="d-flex gap align-items-center">
-                <div>
-                  <h6>Music & Gaming</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/camera.jpg" alt="camera" />
-              </div>
-              <div className="d-flex gap align-items-center">
-                <div>
-                  <h6>Cameras</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/camera.jpg" alt="camera" />
-              </div>
-              <div className="d-flex gap align-items-center">
-                <div>
-                  <h6>Smart Tv</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/tv.jpg" alt="camera" />
-              </div>
-              <div className="d-flex gap align-items-center">
-                <div>
-                  <h6>Smart Watches</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src="images/headphone.jpg" alt="camera" />
-              </div>
+              <img src="https://www.pngitem.com/pimgs/m/55-553906_check-mark-yellow-clipart-png-download-checkmark-icon.png" alt="Saftey" style={{height:"120px"}}/>
             </div>
-          </div>
+            <div className="d-flex gap align-items-center">
+              <div>
+                <h5>Laid by Hens on Herbal Feed</h5>
+              
+              </div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFiHBIkr0aL2ECNtncYVlLH04dFz3G-mxOQZmq3dWOZB3tFXHDnq3fJ5NrGgQDbzZhadQ&usqp=CAU" alt="Feed" style={{height:"120px"}}/>
+            </div>
+            
+            </div>
         </div>
-      </Container>
+      </div>
+    </Container>
       <Container class1="featured-wrapper py-5 home-wrapper-2">
         <div className="row">
           <div className="col-12">
-            <h3 className="section-heading">Featured Collection</h3>
+            <h3 className="section-heading">Products </h3>
           </div>
           <ProductCard />
           <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {/* <ProductCard /> */}
+          {/* <ProductCard /> */}
         </div>
       </Container>
 
-      <Container class1="famous-wrapper py-5 home-wrapper-2">
+      {/* <Container class1="famous-wrapper py-5 home-wrapper-2">
         <div className="row">
           <div className="col-3">
             <div className="famous-card position-relative">
@@ -247,7 +145,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </Container> */}
 
       <Container class1="special-wrapper py-5 home-wrapper-2">
         <div className="row">
@@ -281,36 +179,28 @@ const Home = () => {
             <div className="marquee-inner-wrapper card-wrapper">
               <Marquee className="d-flex">
                 <div className="mx-4 w-25">
-                  <img src="images/brand-01.png" alt="brand" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUPsFwi3zmdPjPYe2Dd8kxIelE_VBGAdlVEw&usqp=CAU" alt="brand" />
                 </div>
                 <div className="mx-4 w-25">
-                  <img src="images/brand-02.png" alt="brand" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW135vZpP2_7rthk3AE0A7u-34uLo5cfFkHg&usqp=CAU" alt="brand" />
                 </div>
                 <div className="mx-4 w-25">
-                  <img src="images/brand-03.png" alt="brand" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlCgmxdrPmt9_UZVJQW4TbDyRR39OVa378SA&usqp=CAU" alt="brand" />
                 </div>
                 <div className="mx-4 w-25">
-                  <img src="images/brand-04.png" alt="brand" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW135vZpP2_7rthk3AE0A7u-34uLo5cfFkHg&usqp=CAU" alt="brand" />
                 </div>
                 <div className="mx-4 w-25">
-                  <img src="images/brand-05.png" alt="brand" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlCgmxdrPmt9_UZVJQW4TbDyRR39OVa378SA&usqp=CAU" alt="brand" />
                 </div>
-                <div className="mx-4 w-25">
-                  <img src="images/brand-06.png" alt="brand" />
-                </div>
-                <div className="mx-4 w-25">
-                  <img src="images/brand-07.png" alt="brand" />
-                </div>
-                <div className="mx-4 w-25">
-                  <img src="images/brand-08.png" alt="brand" />
-                </div>
+    
               </Marquee>
             </div>
           </div>
         </div>
       </Container>
 
-      <Container class1="blog-wrapper py-5 home-wrapper-2">
+      {/* <Container class1="blog-wrapper py-5 home-wrapper-2">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading">Our Latest Blogs</h3>
@@ -330,7 +220,7 @@ const Home = () => {
             <BlogCard />
           </div>
         </div>
-      </Container>
+      </Container> */}
     </>
   );
 };

@@ -5,7 +5,7 @@ import prodcompare from "../images/prodcompare.svg";
 import wish from "../images/wish.svg";
 import wishlist from "../images/wishlist.svg";
 import watch from "../images/watch.jpg";
-import watch2 from "../images/watch-1.avif";
+// import watch2 from "../images/watch-1.avif";
 import addcart from "../images/add-cart.svg";
 import view from "../images/view.svg";
 const ProductCard = (props) => {
@@ -36,14 +36,13 @@ const ProductCard = (props) => {
             </button>
           </div>
           <div className="product-image">
-            <img src={watch} className="img-fluid" alt="product image" />
-            <img src={watch2} className="img-fluid" alt="product image" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm0lkGXNjCMfHO419T8QyXw-G3UP0lS__gfA&usqp=CAU" className="img-fluid" alt="product iage" />
+            <img src= "https://zagfresh.com/wp-content/uploads/2020/06/egg2.jpg" className="img-fluid" alt="product imge" />
           </div>
           <div className="product-details">
-            <h6 className="brand">Havels</h6>
+            <h6 className="brand">Namdeo eggs</h6>
             <h5 className="product-title">
-              Kids headphones bulk 10 pack multi colored for students
-            </h5>
+Brown Eggs            </h5>
             <ReactStars
               count={5}
               size={24}
@@ -57,7 +56,7 @@ const ProductCard = (props) => {
               dolores et quas molestias excepturi sint occaecati cupiditate non
               provident, similique sunt...
             </p>
-            <p className="price">$100.00</p>
+            <p className="price">Rs 100.00</p>
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
@@ -95,13 +94,13 @@ const ProductCard = (props) => {
             </button>
           </div>
           <div className="product-image">
-            <img src={watch} className="img-fluid" alt="product image" />
-            <img src={watch2} className="img-fluid" alt="product image" />
+            <img src="https://img.freepik.com/free-photo/brown-eggs_2829-13455.jpg" className="img-fluid" alt="product image" />
+            <img src="https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg" className="img-fluid" alt="product image" />
           </div>
           <div className="product-details">
-            <h6 className="brand">Havels</h6>
+            <h6 className="brand">Namdeo eggs</h6>
             <h5 className="product-title">
-              Kids headphones bulk 10 pack multi colored for students
+             Fresh Eggs
             </h5>
             <ReactStars
               count={5}
@@ -116,7 +115,7 @@ const ProductCard = (props) => {
               dolores et quas molestias excepturi sint occaecati cupiditate non
               provident, similique sunt...
             </p>
-            <p className="price">$100.00</p>
+            <p className="price">Rs 100.00</p>
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">

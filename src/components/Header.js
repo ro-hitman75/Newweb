@@ -14,14 +14,14 @@ const Header = () => {
           <div className="row">
             <div className="col-6">
               <p className="text-white mb-0">
-                Free Shipping Over $100 & Free Returns
+                Free Shipping Over 500 & Free Returns
               </p>
             </div>
             <div className="col-6">
               <p className="text-end text-white mb-0">
                 Hotline:
-                <a className="text-white" href="tel:+91 8264954234">
-                  +91 8264954234
+                <a className="text-white" href="tel:+91 8600707575 ">
+                  +91 8600707575
                 </a>
               </p>
             </div>
@@ -33,7 +33,7 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-2">
               <h2>
-                <Link className="text-white">Dev Corner</Link>
+                <Link className="text-white">Namdeo Eggs</Link>
               </h2>
             </div>
             <div className="col-5">
@@ -57,10 +57,10 @@ const Header = () => {
                     to="/compare-product"
                     className="d-flex align-items-center gap-10 text-white"
                   >
-                    <img src={compare} alt="compare" />
-                    <p className="mb-0">
+                    {/* <img src={compare} alt="compare" /> */}
+                    {/* <p className="mb-0">
                       Compare <br /> Products
-                    </p>
+                    </p> */}
                   </Link>
                 </div>
                 <div>
@@ -93,7 +93,7 @@ const Header = () => {
                     <img src={cart} alt="cart" />
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
-                      <p className="mb-0">$ 500</p>
+                      <p className="mb-0">100</p>
                     </div>
                   </Link>
                 </div>

@@ -8,12 +8,12 @@ const SpecialProduct = () => {
         <div className="special-product-card">
           <div className="d-flex justify-content-between">
             <div>
-              <img src="images/watch.jpg" className="img-fluid" alt="watch" />
+              <img src="https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg" style={{height:"270px"}} className="img-fluid" alt="watch" />
             </div>
             <div className="special-product-content">
-              <h5 className="brand">Havels</h5>
+              <h5 className="brand">Namdeo eggs</h5>
               <h6 className="title">
-                Samsung Galaxy Note10+ Mobile Phone; Sim...
+                Brown Eggs
               </h6>
               <ReactStars
                 count={5}
@@ -23,7 +23,7 @@ const SpecialProduct = () => {
                 activeColor="#ffd700"
               />
               <p className="price">
-                <span className="red-p">$100</span> &nbsp; <strike>$200</strike>
+                <span className="red-p">Rs100</span> &nbsp; <strike>R200</strike>
               </p>
               <div className="discount-till d-flex align-items-center gap-10">
                 <p className="mb-0">
