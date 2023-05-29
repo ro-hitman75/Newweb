@@ -4,11 +4,11 @@ import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
 import ReactImageZoom from "react-image-zoom";
-import Color from "../components/Color";
+// import Color from "../components/Color";
 import { TbGitCompare } from "react-icons/tb";
 import { AiOutlineHeart } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import watch from "../images/watch.jpg";
+// import watch from "../images/watch.jpg";
 import Container from "../components/Container";
 const SingleProduct = () => {
   const props = {
@@ -19,7 +19,7 @@ const SingleProduct = () => {
     img: "https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg",
   };
 
-  const [orderedProduct, setorderedProduct] = useState(true);
+  const [orderedProduct,] = useState(true);
   const copyToClipboard = (text) => {
     console.log("text", text);
     var textField = document.createElement("textarea");
@@ -165,12 +165,12 @@ const SingleProduct = () => {
                 </div>
                 <div className="d-flex align-items-center gap-15">
                   <div>
-                    <a href="">
+                    <a href="/">
                       <TbGitCompare className="fs-5 me-2" /> Add to Compare
                     </a>
                   </div>
                   <div>
-                    <a href="">
+                    <a href="/">
                       <AiOutlineHeart className="fs-5 me-2" /> Add to Wishlist
                     </a>
                   </div>
@@ -186,7 +186,7 @@ const SingleProduct = () => {
                 <div className="d-flex gap-10 align-items-center my-3">
                   <h3 className="product-heading">Product Link:</h3>
                   <a
-                    href="javascript:void(0);"
+                    href="https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg"
                     onClick={() => {
                       copyToClipboard(
                         "https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg"
@@ -237,7 +237,7 @@ const SingleProduct = () => {
                 </div>
                 {orderedProduct && (
                   <div>
-                    <a className="text-dark text-decoration-underline" href="">
+                    <a className="text-dark text-decoration-underline" href="nn">
                       Write a Review
                     </a>
                   </div>

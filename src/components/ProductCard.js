@@ -3,8 +3,8 @@ import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
 import prodcompare from "../images/prodcompare.svg";
 import wish from "../images/wish.svg";
-import wishlist from "../images/wishlist.svg";
-import watch from "../images/watch.jpg";
+// import wishlist from "../images/wishlist.svg";
+// import watch from "../images/watch.jpg";
 // import watch2 from "../images/watch-1.avif";
 import addcart from "../images/add-cart.svg";
 import view from "../images/view.svg";
@@ -17,14 +17,14 @@ const ProductCard = (props) => {
     <>
       <div
         className={` ${
-          location.pathname == "/product" ? `gr-${grid}` : "col-3"
+          location.pathname === "/product" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link
           to={`${
-            location.pathname == "/"
+            location.pathname === "/"
               ? "/product/:id"
-              : location.pathname == "/product/:id"
+              : location.pathname === "/product/:id"
               ? "/product/:id"
               : ":id"
           }`}
@@ -75,14 +75,14 @@ Brown Eggs            </h5>
       </div>
       <div
         className={` ${
-          location.pathname == "/product" ? `gr-${grid}` : "col-3"
+          location.pathname === "/product" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link
           to={`${
-            location.pathname == "/"
+            location.pathname === "/"
               ? "/product/:id"
-              : location.pathname == "/product/:id"
+              : location.pathname === "/product/:id"
               ? "/product/:id"
               : ":id"
           }`}
@@ -94,8 +94,8 @@ Brown Eggs            </h5>
             </button>
           </div>
           <div className="product-image">
-            <img src="https://img.freepik.com/free-photo/brown-eggs_2829-13455.jpg" className="img-fluid" alt="product image" />
-            <img src="https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg" className="img-fluid" alt="product image" />
+            <img src="https://img.freepik.com/free-photo/brown-eggs_2829-13455.jpg" className="img-fluid" alt="product imge" />
+            <img src="https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg" className="img-fluid" alt="produ imge" />
           </div>
           <div className="product-details">
             <h6 className="brand">Namdeo eggs</h6>

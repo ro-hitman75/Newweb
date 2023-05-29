@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
-import BlogCard from "../components/BlogCard";
+// import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
 import SpecialProduct from "../components/SpecialProduct";
 import Container from "../components/Container";
@@ -49,7 +49,7 @@ const Home = () => {
                 <h5>One day Fresh</h5>
                 
               </div>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5r2Gtyl9pJ-q2yQ9-Iqus5_MTQdY3OnleSA&usqp=CAU" style={{height:"120px"}}/>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5r2Gtyl9pJ-q2yQ9-Iqus5_MTQdY3OnleSA&usqp=CAU" style={{height:"120px"}} alt="eggs"/>
             </div>
             <div className="d-flex gap align-items-center">
               <div>
