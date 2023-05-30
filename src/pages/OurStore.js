@@ -19,10 +19,10 @@ const OurStore = () => {
               <h3 className="filter-title">Shop By Categories</h3>
               <div>
                 <ul className="ps-0">
-                  <li>Watch</li>
-                  <li>Tv</li>
-                  <li>Camera</li>
-                  <li>Laptop</li>
+                  <li>Brown Eggs</li>
+                  <li>Duck Eggs</li>
+                  <li>Jumbo Eggs</li>
+                  <li>White eggs</li>
                 </ul>
               </div>
             </div>
@@ -111,16 +111,16 @@ const OurStore = () => {
               <div>
                 <div className="product-tags d-flex flex-wrap align-items-center gap-10">
                   <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    Headphone
+                    Brown Eggs
                   </span>
                   <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    Laptop
+                    White Eggs
                   </span>
                   <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    Mobile
+                    Jumbo Eggs
                   </span>
                   <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                    Wire
+                    Fresh Eggs
                   </span>
                 </div>
               </div>
@@ -131,14 +131,14 @@ const OurStore = () => {
                 <div className="random-products mb-3 d-flex">
                   <div className="w-50">
                     <img
-                      src="images/watch.jpg"
+                      src="https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg"
                       className="img-fluid"
                       alt="watch"
                     />
                   </div>
                   <div className="w-50">
                     <h5>
-                      Kids headphones bulk 10 pack multi colored for students
+                    Duck Eggs
                     </h5>
                     <ReactStars
                       count={5}
@@ -147,20 +147,20 @@ const OurStore = () => {
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <b>$ 300</b>
+                    <b>Rs 300</b>
                   </div>
                 </div>
                 <div className="random-products d-flex">
                   <div className="w-50">
                     <img
-                      src="images/watch.jpg"
+                      src="https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg"
                       className="img-fluid"
                       alt="watch"
                     />
                   </div>
                   <div className="w-50">
                     <h5>
-                      Kids headphones bulk 10 pack multi colored for students
+                      Quail Eggs
                     </h5>
                     <ReactStars
                       count={5}
@@ -169,7 +169,7 @@ const OurStore = () => {
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <b>$ 300</b>
+                    <b>Rs 300</b>
                   </div>
                 </div>
               </div>
@@ -207,7 +207,7 @@ const OurStore = () => {
                       onClick={() => {
                         setGrid(3);
                       }}
-                      src="images/gr4.svg"
+                      src="https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg"
                       className="d-block img-fluid"
                       alt="grid"
                     />
@@ -215,7 +215,7 @@ const OurStore = () => {
                       onClick={() => {
                         setGrid(4);
                       }}
-                      src="images/gr3.svg"
+                      src="https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg"
                       className="d-block img-fluid"
                       alt="grid"
                     />
@@ -223,7 +223,7 @@ const OurStore = () => {
                       onClick={() => {
                         setGrid(6);
                       }}
-                      src="images/gr2.svg"
+                      src="https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg"
                       className="d-block img-fluid"
                       alt="grid"
                     />
@@ -232,7 +232,7 @@ const OurStore = () => {
                       onClick={() => {
                         setGrid(12);
                       }}
-                      src="images/gr.svg"
+                      src="https://www.bigbasket.com/media/uploads/p/l/40187133_1-eggee-brown-eggs.jpg"
                       className="d-block img-fluid"
                       alt="grid"
                     />
