@@ -100,7 +100,7 @@ const OurStore = () => {
                       M (2)
                     </label>
                   </div> */}
-                </div>
+                {/* </div> */}
               </div>
             </div>
             <div className="filter-card mb-3">
