@@ -3,7 +3,7 @@ import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import ReactStars from "react-rating-stars-component";
 import ProductCard from "../components/ProductCard";
-import Color from "../components/Color";
+
 import Container from "../components/Container";
 
 const OurStore = () => {
@@ -75,12 +75,9 @@ const OurStore = () => {
                     <label htmlFor="floatingInput1">To</label>
                   </div>
                 </div>
-                <h5 className="sub-title">Colors</h5>
-                <div>
-                  <Color />
-                </div>
+             
                 <h5 className="sub-title">Size</h5>
-                <div>
+                {/* <div>
                   <div className="form-check">
                     <input
                       className="form-check-input"
@@ -102,7 +99,7 @@ const OurStore = () => {
                     <label className="form-check-label" htmlFor="color-2">
                       M (2)
                     </label>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
